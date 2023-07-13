@@ -1,5 +1,7 @@
 const express = require("express");
-const songRouter = require("./songs/routes.js");
+const { errorHandler } = require("./utils/ErrorHandler");
+
+const songRouter = require("./songs/routes");
 
 const PORT = 3000;
 const app = express();
@@ -11,6 +13,8 @@ app.get("/", (req, res) => {
 });
 
 app.use("/songs", songRouter);
+
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
