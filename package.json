@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "generasi gigih module 2 session 2",
   "type": "commonjs",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
     "start": "node app.js",
     "start-dev": "nodemon app.js",
