@@ -1,5 +1,5 @@
 const express = require("express");
-const getAllSongs = require("./get.allSong");
+const getAllSongs = require("./get.allSongs");
 const addSong = require("./post.addSong");
 const playSong = require("./patch.playSong");
 

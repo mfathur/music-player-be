@@ -3,7 +3,20 @@ class SongService {
     this.models = models;
   }
 
-  async getAllSongs() {
+  async getAllSongs(query) {
+    if (query.sort_by === "most_played") {
+      // sort by played_count
+      const data = this.models.sort((s1, s2) =>
+        s1.played_count < s2.played_count
+          ? 1
+          : s1.played_count > s2.played_count
+          ? -1
+          : 0
+      );
+
+      return data;
+    }
+
     return this.models;
   }
 
