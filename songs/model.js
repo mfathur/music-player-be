@@ -4,7 +4,8 @@ const songs = [
     title: "title 1",
     artists: ["john", "doe"],
     url: "http://www.google.com",
-    status: "playing",
+    status: "idle",
+    played_count: 0,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const songs = [
     artists: ["jane", "de"],
     url: "http://www.google.com",
     status: "idle",
+    played_count: 0,
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ const songs = [
     artists: ["test", "tset"],
     url: "http://www.google.com",
     status: "idle",
+    played_count: 0,
   },
 ];
 
